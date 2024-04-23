@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sophora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Sophora</h1>
+
+<button class="accordion">制作组简章</button>
+<div class="panel">
+    <p>这里是小槐制作组。制作组成员(更新中): EMME、不定红茶、咖啡、咕子、阿澈。</p>
+</div>
+
+<button class="accordion">游戏简介</button>
+<div class="panel">
+    <p>这里是游戏简介的内容...</p>
+</div>
+
+<button class="accordion">世界设定</button>
+<div class="panel">
+    <button class="accordion">里世界区块</button>
+    <div class="panel">
+        <p>这里是里世界区块的内容...</p>
+    </div>
+
+    <button class="accordion">里世界生物</button>
+    <div class="panel">
+        <p>里世界生物表象与负面情绪息息相关。
+            本故事采用的情绪理论是与怪物属性生成相结合的理论，与现实理论有所不同。其主要围绕三个维度来进行具体的情绪划分，分别是内心体验、外在决策与调节手段，此外每个维度包含若干子属性。</p>
+    </div>
+</div>
+
+<button class="accordion">主要人物</button>
+<div class="panel">
+    <button class="accordion">小槐</button>
+    <div class="panel">
+        <p>形象...</p>
+    </div>
+</div>
+
+<button class="accordion">玩法相关</button>
+<div class="panel">
+    <p>这里是玩法相关的内容...</p>
+</div>
+
+<button class="accordion">故事情节</button>
+<div class="panel">
+    <p>这里是故事剧本...</p>
+    <button class="accordion">序章</button>
+    <div class="panel">
+        <p>序章内容...</p>
+    </div>
+</div>
+
+<button class="accordion">工具链接</button>
+<div class="panel">
+    <p>这里是工具链接的内容...</p>
+</div>
+
+<button class="accordion">声明</button>
+<div class="panel">
+    <p>这是一份声明。</p>
+</div>
+
+<!-- 其他内容 -->
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
